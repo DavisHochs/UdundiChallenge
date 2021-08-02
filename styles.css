@@ -2,6 +2,14 @@ body {
     background-image: url(./assets/Coding-Challenge-Image.png);
 }
 
+h1 {
+    font-family: 'Arvo', serif;
+}
+
+li {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 .navbar {
     background-color: #E7A562;
     opacity: .95;
@@ -18,6 +26,13 @@ body {
 
 .landing-container {
     background-color: rgba(231, 165, 98, .95);
+    margin-top: 2em;
+}
+
+.content-container {
+    background-color: #fff;
+    opacity: 0;
+    width: 30%;
 }
 
 
