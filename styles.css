@@ -19,6 +19,10 @@ li {
     color: #fff;
 }
 
+img {
+    transition: 1s;
+}
+
 .landing-header {
     font-size: 6em;
     color: rgba(255,255,255, 1);
@@ -29,10 +33,37 @@ li {
     margin-top: 2em;
 }
 
+.button-animation {
+    position: fixed;
+    margin-top: 1em;
+}
+
 .content-container {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
     opacity: 0;
-    width: 30%;
+    border-radius: 4px;
+    transition: 2s;
+    width: 0px;
+    height: 0px;
+}
+
+.content-container.animation {
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 100;
+    width: 400px;
+    height: 350px;
+    transition: 1s;
+}
+
+.content-content {
+    transition: 2s;
+    opacity: 0;
+    margin: 10px;
+
+}
+
+.content-content.delayedAnimation {
+    opacity: 100;
 }
 
 

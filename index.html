@@ -37,10 +37,14 @@
       <div class="container landing-container">
           <h1 class="landing-header">Explore</h1>
       </div>
+      
       <div class="container">
           <div class="content-container" id="hidden-content">
-              <h1>Lorem Ipsum</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="content-content">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="d-flex justify-content-end btn btn-secondary" >Close box ➜</button>
+              </div>
           </div>
             <img onclick="changeText()" class="button-animation" id="button-animation" src="assets/Plus.svg"></img>
             
@@ -53,7 +57,18 @@
 <script>
     
     function changeText() {
-        document.getElementById("hidden-content").style.opacity = 100;
+        console.log("im working")
+        let hiddenContainer =  document.getElementsByClassName('content-container')[0];
+        let hiddenContent =  document.getElementsByClassName('content-content')[0];
+
+        
+
+        document.getElementsByClassName('button-animation')[0].onclick = function() {
+            hiddenContainer.classList.add('animation');
+            hiddenContent.classList.add('delayedAnimation');
+            document.getElementById('button-animation').style.cssText = "opacity: 0";
+        }
+        
     }
 </script>
 
