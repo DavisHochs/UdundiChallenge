@@ -1,0 +1,23 @@
+body {
+    background-image: url(./assets/Coding-Challenge-Image.png);
+}
+
+.navbar {
+    background-color: #E7A562;
+    opacity: .95;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+}
+
+.landing-header {
+    font-size: 6em;
+    color: rgba(255,255,255, 1);
+}
+
+.landing-container {
+    background-color: rgba(231, 165, 98, .95);
+}
+
+
