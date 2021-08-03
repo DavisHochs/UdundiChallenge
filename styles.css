@@ -1,23 +1,26 @@
-body {
+body{
     background-image: url(./assets/Coding-Challenge-Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-h1 {
+html {
+    height: auto;   
+  }
+
+
+.maroon-box {
+    width: 30%;
+    height: 100vh;
+    background-color: maroon;
+}
+
+h1, h3 {
     font-family: 'Arvo', serif;
+    color: #fff
 }
 
-li {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-.navbar {
-    background-color: #E7A562;
-    opacity: .95;
-}
-
-.nav-item .nav-link {
-    color: #fff;
-}
 
 img {
     transition: 1s;
@@ -28,42 +31,21 @@ img {
     color: rgba(255,255,255, 1);
 }
 
-.landing-container {
-    background-color: rgba(231, 165, 98, .95);
-    margin-top: 2em;
-}
+
 
 .button-animation {
-    position: fixed;
     margin-top: 1em;
 }
 
 .content-container {
-    background-color: rgba(255, 255, 255, 0);
-    opacity: 0;
+    background-color: #fff;
+    opacity:0;
     border-radius: 4px;
-    transition: 2s;
-    width: 0px;
-    height: 0px;
-}
-
-.content-container.animation {
-    background-color: rgba(255, 255, 255, 1);
-    opacity: 100;
     width: 400px;
     height: 350px;
-    transition: 1s;
 }
 
-.content-content {
-    transition: 2s;
-    opacity: 0;
-    margin: 10px;
-
+.closer {
+    margin-right: 20px;
 }
-
-.content-content.delayedAnimation {
-    opacity: 100;
-}
-
 
