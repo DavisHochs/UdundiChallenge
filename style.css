@@ -1,6 +1,5 @@
 body {
     background-image: url('./assets/Coding-Challenge-Image.png');
-    background-blend-mode:darken;
 }
 
 .custom-button {
@@ -80,9 +79,9 @@ h3, p {
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: gradientSlide 10s ease 1;
-    -moz-animation: gradientSlide 10s ease 1;
-    animation: gradientSlide 10s ease 1;
+    -webkit-animation: gradientSlide 15s ease-out 1;
+    -moz-animation: gradientSlide 15s ease-in 1;
+    animation: gradientSlide 15s ease-out 1;
 }
 
 @-webkit-keyframes gradientSlide {
